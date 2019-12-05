@@ -21,11 +21,15 @@
   height: 100vh;
   display: flex;
   margin: auto;
-  background-color: black;
+  background-image: url('../src/assets/nav-image.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: backgroundScroll 15s linear infinite;
+  animation: backgroundScroll 15s linear infinite;
 }
 
 .landingDiv {
-  color: cornflowerblue;
+  color: black;
   margin: auto;
   text-align: center;
 }
@@ -38,11 +42,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-auto-rows: minmax(min-content, max-content);
-  background-image: url('../src/assets/nav-image.jpeg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-animation: backgroundScroll 15s linear infinite;
-  animation: backgroundScroll 15s linear infinite;
+  background-color: white;
 }
 
 .navLink {

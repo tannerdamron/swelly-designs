@@ -15,11 +15,11 @@ class Landing extends React.Component {
     return (
       <div id="Landing">
         <div className="landingDiv">
-          <p>
+          <h2>
             Hello, My name is Tanner Damron.
             <br />I am a full stack web developer
-          </p>
-          <Button variant="outline-info" onClick={ this.snapToHome }>Check out my work!</Button>
+          </h2>
+          <Button variant="outline-dark" size="lg" onClick={ this.snapToHome }>Check out my work!</Button>
         </div>
       </div>
     );
