@@ -1,23 +1,22 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "../../App.css";
 
 function Navbar() {
 
   return (
-    <div className="Nav">
+    <div id="Nav">
       <p className="navLink">
-        <Link to="/">Home</Link>
+        <a>Home</a>
       </p>
       <p className="navLink">
-        <Link to="/about">About Page</Link>
+        <a>About</a>
       </p>
       <h1 className="homeTitle">Swelly Designs</h1>
       <p className="navLink">
-        <Link to="/">Contact</Link>
+        <a>Tech Stack</a>
       </p>
       <p className="navLink">
-        <Link to="/about">Tech Stack</Link>
+        <a>Contact</a>
       </p>
     </div>
   );

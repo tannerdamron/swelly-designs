@@ -12,9 +12,27 @@
   background-position-y: 35%;
 }
 
+/* Landing */
+
+#Landing {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  margin: auto;
+  background-color: black;
+}
+
+.landingDiv {
+  color: cornflowerblue;
+  margin: auto;
+  text-align: center;
+}
+
 /* Navbar */
 
-.Nav {
+#Nav {
   border-bottom: 3px solid rgba(96, 141, 199, 0.863);
   width: 100%;
   display: grid;
@@ -47,7 +65,7 @@
 
 /* Home */
 
-.homePage {
+#homePage {
   text-align: center;
 }
 
@@ -69,10 +87,12 @@
 .bigCard {
   background-color: rgba(255, 255, 255);
   border: 2px solid black;
-  height: 300px;
   width: 80%;
-  padding: 10px;
+  padding: 20px;
   margin: auto;
+  margin-top: 4%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
 }
 
 .miniTitle {
