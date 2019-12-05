@@ -1,25 +1,24 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import logo from '../../assets/logo.png';
 import "../../App.css";
 
 function Navbar() {
+
   return (
     <div className="Nav">
-      <img className="swellyLogo" src={logo} alt=""></img>
+      <p className="navLink">
+        <Link to="/">Home</Link>
+      </p>
+      <p className="navLink">
+        <Link to="/about">About Page</Link>
+      </p>
       <h1 className="homeTitle">Swelly Designs</h1>
-      <Link to="/">
-        <button className="navButton">Home</button>
-      </Link>
-      <Link to="/about">
-        <button className="navButton">About Page</button>
-      </Link>
-      <Link to="/">
-        <button className="navButton">Home</button>
-      </Link>
-      <Link to="/about">
-        <button className="navButton">About Page</button>
-      </Link>
+      <p className="navLink">
+        <Link to="/">Contact</Link>
+      </p>
+      <p className="navLink">
+        <Link to="/about">Tech Stack</Link>
+      </p>
     </div>
   );
 }

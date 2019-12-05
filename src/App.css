@@ -1,37 +1,47 @@
+@keyframes backgroundScroll {
+    from {background-position: 0 0 ;}
+    to {background-position: 0 100%;}
+}
+
 .App {
   text-align: center;
+  background-image: url('../src/assets/clearWave.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position-y: 35%;
 }
 
 /* Navbar */
 
 .Nav {
-  background-color: rgba(140, 228, 255, 0.663);
-  height: 70px;
+  border-bottom: 3px solid rgba(96, 141, 199, 0.863);
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-rows: minmax(min-content, max-content);
+  background-image: url('../src/assets/nav-image.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: backgroundScroll 15s linear infinite;
+  animation: backgroundScroll 15s linear infinite;
 }
 
-.navButton {
-  background-color: rgba(88, 160, 255, 0.863);
-  border-radius: 20px;
-  border-style: solid;
+.navLink {
+  font-size: 30px;
+  color: black;
+  margin-bottom: 2%;
 }
 
-.navButton:hover {
-  cursor: pointer;
-}
-
-.swellyLogo {
-  height: 50px;
-  width: 50px;
-  margin-left: 10px;
+.navLink:hover {
+  font-size: 32px;
 }
 
 .homeTitle {
-  font-size: 30px;
-  color: rgba(88, 160, 255, 0.863);
-  text-shadow: 1px 1px rgb(31, 31, 31);
+  font-size: 40px;
+  font-weight: lighter;
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 1px rgb(67, 190, 228);
   font-family: sans-serif;
 }
 
@@ -39,9 +49,6 @@
 
 .homePage {
   text-align: center;
-  background-image: url('../src/assets/clearWave.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .card {
@@ -50,5 +57,48 @@
   border: 2px solid black;
   width: fit-content;
   padding: 10px;
-  margin: 0 5% 5% 5%;
+  margin: 5% 5% 5% 5%;
+}
+
+.twoCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.bigCard {
+  background-color: rgba(255, 255, 255);
+  border: 2px solid black;
+  height: 300px;
+  width: 80%;
+  padding: 10px;
+  margin: auto;
+}
+
+.miniTitle {
+  color: rgba(88, 160, 255, 0.863);
+  font-size: 80px;
+  text-shadow: 2px 2px black;
+  font-family: sans-serif;
+}
+
+.allWorkDone {
+  margin-top: 3%;
+  background-color: white;
+  padding-bottom: 3%;
+  border: 2px solid black;
+}
+
+.workDone {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.project {
+  margin-top: 30px;
+  background-color: rgba(88, 160, 255, 0.363);;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 20px;
 }
