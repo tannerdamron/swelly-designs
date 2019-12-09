@@ -43,6 +43,10 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-auto-rows: minmax(min-content, max-content);
   background-color: white;
+  position: -webkit-sticky;
+  position: sticky;
+  top: -1px;
+  z-index: 5;
 }
 
 .navLink {
@@ -53,6 +57,7 @@
 
 .navLink:hover {
   font-size: 32px;
+  cursor: pointer;
 }
 
 .homeTitle {
@@ -89,8 +94,7 @@
   border: 2px solid black;
   width: 80%;
   padding: 20px;
-  margin: auto;
-  margin-top: 4%;
+  margin: 4% auto 4% auto;
   display: grid;
   grid-template-columns: 1fr 3fr;
 }
@@ -100,13 +104,15 @@
   font-size: 80px;
   text-shadow: 2px 2px black;
   font-family: sans-serif;
+  margin: 3%;
 }
 
-.allWorkDone {
-  margin-top: 3%;
+#allWorkDone {
+  margin-top: 15%;
   background-color: white;
   padding-bottom: 3%;
-  border: 2px solid black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
 .workDone {
@@ -117,6 +123,7 @@
 
 .project {
   margin-top: 30px;
+  margin: 2% 2% 2% 2%;
   background-color: rgba(88, 160, 255, 0.363);;
   border: 2px solid black;
   border-radius: 20px;
