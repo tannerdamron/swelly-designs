@@ -13,6 +13,9 @@ import {
 } from "reactstrap";
 import * as emailjs from "emailjs-com";
 
+import { confirmAlert } from 'react-confirm-alert'; // Import
+import 'react-confirm-alert/src/react-confirm-alert.css'; // Import css
+
 class Home extends Component {
   state = {
     name: "",
@@ -27,16 +30,33 @@ class Home extends Component {
       from_name: email,
       to_name: "tanner.mdamron@gmail.com",
       subject: subject,
-      message_html: message
+      message_html: message,
+      name: name
     };
-    emailjs.send(
-      "gmail",
-      "template_GrFphG4K",
-      templateParams,
-      "user_6Eu68sdo1QL4k77JM0atu"
-    );
+
+    confirmAlert({
+      title: 'Confirm to submit',
+      message: 'Are you sure?',
+      buttons: [
+        {
+          label: 'Yes',
+          onClick: () =>
+            emailjs.send(
+              "gmail",
+              "template_GrFphG4K",
+              templateParams,
+              "user_6Eu68sdo1QL4k77JM0atu"
+            )
+        },
+        {
+          label: 'No',
+          onClick: () => ""
+        }
+      ]
+    });
     this.resetForm();
   }
+
   resetForm() {
     this.setState({
       name: "",
@@ -45,6 +65,7 @@ class Home extends Component {
       message: ""
     });
   }
+
   handleChange = (param, e) => {
     this.setState({ [param]: e.target.value });
   };
@@ -116,8 +137,8 @@ class Home extends Component {
                 <div className="project">
                   <h2>KNINE Coffee</h2>
                   <h3>
-                    An E-Commerce website for a coffee company, using Shopify
-                    and custom coding.
+                    An E-Commerce website for a nutritional based coffee
+                    company, using Shopify and custom coding.
                   </h3>
                   <a href="https://www.kninecs.com/">
                     Check out the live website
@@ -165,6 +186,7 @@ class Home extends Component {
                   className="contactInput"
                   onChange={this.handleChange.bind(this, "email")}
                   placeholder="Enter email"
+                  required
                 />
               </FormGroup>
               <FormGroup controlId="formBasicName">
@@ -176,6 +198,7 @@ class Home extends Component {
                   className="contactInput"
                   onChange={this.handleChange.bind(this, "name")}
                   placeholder="Name"
+                  required
                 />
               </FormGroup>
               <FormGroup controlId="formBasicSubject">
@@ -187,6 +210,7 @@ class Home extends Component {
                   value={this.state.subject}
                   onChange={this.handleChange.bind(this, "subject")}
                   placeholder="Subject"
+                  required
                 />
               </FormGroup>
               <FormGroup controlId="formBasicMessage">
@@ -197,15 +221,15 @@ class Home extends Component {
                   className="contactInput"
                   value={this.state.message}
                   onChange={this.handleChange.bind(this, "message")}
+                  required
                 />
               </FormGroup>
-              <Button variant="primary" type="submit">
+              <Button className="submitButton" variant="primary" type="submit">
                 Submit
               </Button>
             </Form>
           </div>
         </div>
-
       </div>
     );
   }
