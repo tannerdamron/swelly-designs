@@ -8,7 +8,7 @@ class Landing extends React.Component {
   }
 
   snapToHome() {
-    document.getElementById("Nav").scrollIntoView({behavior: "smooth"});
+    document.getElementById("about").scrollIntoView({behavior: "smooth"});
   }
 
   render() {
