@@ -1,68 +1,97 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## **Swelly Designs**
 
-## Available Scripts
+#### By Tanner Damron
+###### Initiated Dec 1st, 2019.
 
-In the project directory, you can run:
+----------
 
-### `npm start`
+## Description
+This web application was built with React.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Known Bugs
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+* No known bugs
 
-### `npm test`
+#### Prerequisites
+* [Node.js](https://nodejs.org/en/)
+* [Node.js Package Manager (npm)](https://www.npmjs.com/)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Download Repo
+1. Download and install required software: Node.js, npm
+2. Clone [this repository](https://github.com/tannerdamron/swelly-designs.git): `$ git clone https://github.com/tannerdamron/swelly-designs.git`
 
-### `npm run build`
+#### Prepare
+1. Navigate to the application directory: `$ cd Swelly-Designs`
+2. Execute the command `$ npm install`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### View Code
+1. Navigate to the application directory: `$ cd Swelly-Designs`
+2. Use preferred text editor or IDE to see all code used.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+#### Open Locally
+1. Navigate to the application directory: `$ cd Swelly-Designs`
+2. Run the command: `$ npm run start`
+3. Navigate to the local host your terminal provides to see application
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Edit
+1. Navigate to the application directory: `$ cd Swelly-Designs`
+2. Use your preferred IDE or editor to edit the project
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Built With
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Windows 10.1
+* Visual Studio Code (Text Editor)
+* Node.js v10.15.3
+* npm v6.4.1
+* React
+* JSX
+* JavaScript
+* CSS
+* Babel v7.0.0
+* Animate CSS
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Contact
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+[tanner.mdamron@gmail.com](mailto:tanner.mdamron@gmail.com)
 
-## Learn More
+If you have any feedback or concerns, please contact any of the contributors.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## License
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT). Copyright (C) 2019 Tanner Damron. All Rights Reserved.
+```
+MIT License
 
-### Code Splitting
+Copyright (c) 2019 Tanner Damron
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-### Analyzing the Bundle Size
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
 
-### Making a Progressive Web App
+## Acknowledgments
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+#### [Epicodus](https://www.epicodus.com/)
+>"A school for tech careers... to help people learn the skills they need to get great jobs."
 
-### Advanced Configuration
+#### [The Plato System](https://en.wikipedia.org/w/index.php?title=PLATO_system&redirect=yes)
+>"PLATO had sprouted a variety of novel tools for online communication, including Personal Notes (email), Talkomatic (chat rooms), Term-Talk (instant messaging), monitor mode (remote screen sharing) and emoticons."
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+#### [The Internet](https://webfoundation.org/)
+> "...the first thing that humanity has built that humanity doesn't understand..."
+> - Eric Schmidt, Google (Alphabet Inc.)
