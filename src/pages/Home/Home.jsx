@@ -82,7 +82,7 @@ class Home extends Component {
               </div>
               <div>
                 <h1 className="bioTitle">
-                  Thanks for coming to Swelly Designs!
+                  About Me
                 </h1>
                 <p>
                   I started my web and program development journey in August
