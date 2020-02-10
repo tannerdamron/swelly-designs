@@ -27,10 +27,10 @@ class Landing extends React.Component {
           >
             Check out my work!
           </Button>
-          <div class="ocean">
-            <div class="wave"></div>
-            <div class="wave"></div>
-          </div>
+        </div>
+        <div className="ocean">
+          <div className="wave"></div>
+          <div className="wave"></div>
         </div>
       </div>
     );

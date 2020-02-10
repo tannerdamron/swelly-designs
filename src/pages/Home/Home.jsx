@@ -3,10 +3,23 @@ import React, { Component } from "react";
 import "../../App.css";
 
 import tanner from '../../assets/tanner.png';
+import js from '../../assets/js.png'
+import html from "../../assets/html.png";
+import css from "../../assets/css.png";
+import react from '../../assets/react.png'
+import csharp from '../../assets/csharp.png'
+import angular from "../../assets/angular.png";
+import dnn from "../../assets/dnn.png";
+import dotnet from "../../assets/dotnet.png";
+import git from "../../assets/git.png";
+import jsx from "../../assets/jsx.png";
+import reactnative from "../../assets/reactnative.png";
+import sql from "../../assets/sql.png";
+import vue from "../../assets/vue.png";
+
 import ScrollAnimation from "react-animate-on-scroll";
 import {
   Button,
-  FormFeedback,
   Form,
   FormGroup,
   Label,
@@ -81,9 +94,7 @@ class Home extends Component {
                 <img src={tanner} alt="owner of swelly designs face" />
               </div>
               <div>
-                <h1 className="bioTitle">
-                  About Me
-                </h1>
+                <h1 className="bioTitle">About Me</h1>
                 <p>
                   I started my web and program development journey in August
                   2018. I have always been a computer and video game nerd
@@ -103,9 +114,77 @@ class Home extends Component {
               </div>
             </div>
           </ScrollAnimation>
-          <div className="techStack">
-            <h1>Tech Stack</h1>
-          </div>
+
+          <ScrollAnimation animateIn="rotateInDownLeft" animateOnce="true">
+            <div className="techStack">
+              <h1 className="miniTitle">Tech Stack</h1>
+              <div className="techGrid">
+                <div>
+                  <h1 className="techTitle">1+ years</h1>
+                  <div className="logoGrid">
+                    <img className="techLogo" src={html} alt="HTML Logo" />
+                    <p className="logoText">HTML</p>
+                  </div>
+                  <div className="logoGrid">
+                    <img className="techLogo" src={css} alt="CSS Logo" />
+                    <p className="logoText">CSS</p>
+                  </div>
+                  <div className="logoGrid">
+                    <img className="techLogo" src={js} alt="JavaScript Logo" />
+                    <p className="logoText">JavaScript</p>
+                  </div>
+                  <div className="logoGrid">
+                    <img className="techLogo" src={react} alt="React Logo" />
+                    <p className="logoText">React</p>
+                  </div>
+                  <div className="logoGrid">
+                    <img className="techLogo" src={csharp} alt="CSharp Logo" />
+                    <p className="logoText">C#</p>
+                  </div>
+                  <div className="logoGrid">
+                    <img className="techLogo" src={git} alt="GIT Logo" />
+                    <p className="logoText">Git</p>
+                  </div>
+                  <div className="logoGrid">
+                    <img className="techLogo" src={jsx} alt="JSX Logo" />
+                    <p className="logoText">JSX</p>
+                  </div>
+                </div>
+
+                <div>
+                  <h1 className="techTitle">&lt; 1 year</h1>
+                  <div className="logoGrid">
+                    <img className="techLogo" src={angular} alt="HTML Logo" />
+                    <p className="logoText">Angular</p>
+                  </div>
+                  <div className="logoGrid">
+                    <img
+                      className="techLogo"
+                      src={dotnet}
+                      alt="JavaScript Logo"
+                    />
+                    <p className="logoText">.NET MVC</p>
+                  </div>
+                  <div className="logoGrid">
+                    <img
+                      className="techLogo"
+                      src={reactnative}
+                      alt="React Native Logo"
+                    />
+                    <p className="logoText">React Native</p>
+                  </div>
+                  <div className="logoGrid">
+                    <img className="techLogo" src={sql} alt="SQLServer Logo" />
+                    <p className="logoText">SQLServer</p>
+                  </div>
+                  <div className="logoGrid">
+                    <img className="techLogo" src={vue} alt="Vue Logo" />
+                    <p className="logoText">Vue</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ScrollAnimation>
         </div>
 
         <div id="projects">
@@ -113,7 +192,7 @@ class Home extends Component {
             <ScrollAnimation animateIn="fadeIn" animateOnce="true">
               <h1 className="miniTitle">Work done for past clients:</h1>
             </ScrollAnimation>
-            <div className="workDone">
+            <div className="sectionGrid">
               <ScrollAnimation
                 animateIn="fadeIn"
                 duration="2"
@@ -144,6 +223,39 @@ class Home extends Component {
                   using Shopify and custom coding.
                 </p>
               </ScrollAnimation>
+            </div>
+          </div>
+
+          <div className="personalProjects">
+            <ScrollAnimation animateIn="fadeIn" animateOnce="true">
+              <h1 className="miniTitle">Personal Projects:</h1>
+            </ScrollAnimation>
+            <div className="sectionGrid">
+              <ScrollAnimation
+                animateIn="fadeIn"
+                duration="2"
+                animateOnce="true"
+              >
+                <h1>Joystick Forums</h1>
+                <a
+                  className="project joystickForums hvr-float-shadow"
+                  href="https://joystick-forums.firebaseapp.com/"
+                ></a>
+                <p className="projectText">
+                  A simple example forum website, with user authentication and
+                  comment threads, using Angular framework & Firebase database.
+                </p>
+              </ScrollAnimation>
+            </div>
+          </div>
+        </div>
+
+        <div id="games">
+          <div className="gamesSection">
+            <ScrollAnimation animateIn="fadeIn" animateOnce="true">
+              <h1 className="miniTitle">Games</h1>
+            </ScrollAnimation>
+            <div className="sectionGridGames">
               <ScrollAnimation
                 animateIn="fadeIn"
                 duration="2"
@@ -163,14 +275,13 @@ class Home extends Component {
                 duration="2"
                 animateOnce="true"
               >
-                <h1>Joystick Forums</h1>
+                <h1>Spaceboi</h1>
                 <a
-                  className="project joystickForums hvr-float-shadow"
-                  href="https://joystick-forums.firebaseapp.com/"
+                  className="project spaceboi hvr-float-shadow"
+                  href="https://spaceboi.claramunro.com"
                 ></a>
                 <p className="projectText">
-                  A simple example forum website, with user authentication and
-                  comment threads, using Angular framework & Firebase database.
+                  A JavaScript video game made with canvas and custom artwork.
                 </p>
               </ScrollAnimation>
             </div>

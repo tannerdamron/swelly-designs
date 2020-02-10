@@ -1,11 +1,10 @@
-@keyframes backgroundScroll {
-    from {background-position: 0 0 ;}
-    to {background-position: 0 100%;}
-}
-
 @font-face {
   font-family: 'Raleway';
   src: URL('../src/assets/fonts/Raleway-Light.ttf') format('truetype');
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .App {
@@ -14,58 +13,46 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-position-y: 35%;
   font-family: Raleway;
-}
-
-body {
-  overflow-x: hidden;
 }
 
 /* Landing */
 
 #Landing {
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100vh;
-  display: flex;
-  margin: auto;
   background: rgb(176, 226, 247);
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-animation: backgroundScroll 15s linear infinite;
-  animation: backgroundScroll 15s linear infinite;
 }
 
 .landingDiv {
   color: black;
   margin: auto;
   text-align: center;
+  padding-top: 40vh;
 }
 
 .ocean {
   height: 5%;
   width:100%;
   position:absolute;
-  bottom:-5%;
+  bottom:0;
   left:0;
   background: #015871;
 }
 
 .wave {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
-  position: absolute;
   top: -198px;
   width: 6400px;
   height: 198px;
-  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+  animation: wave 10s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
   transform: translate3d(0, 0, 0);
+  position: absolute;
 }
 
 .wave:nth-of-type(2) {
   top: -175px;
-  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+  animation: wave 10s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
   opacity: 1;
 }
 
@@ -99,6 +86,7 @@ body {
 .navLink:hover {
   font-size: 32px;
   cursor: pointer;
+  color: rgb(197, 232, 255);
 }
 
 .scrollspy {
@@ -126,6 +114,11 @@ body {
   text-shadow: 2px 2px black;
 }
 
+.homeTitle:hover {
+  cursor: pointer;
+  color: rgb(197, 232, 255);
+}
+
 /* Home */
 
 #homePage {
@@ -136,7 +129,7 @@ body {
 /* About */
 
 #about {
-  padding-top: 8%;
+  padding-top: 4%;
   padding-bottom: 5%;
 }
 
@@ -152,13 +145,43 @@ body {
   margin-bottom: 2%;
 }
 
+/* Tech Stack */
+
 .techStack {
   background-color: rgba(255, 255, 255, 0.8);
   border: 2px solid black;
   padding: 10px;
   margin: auto;
-  width: 80%;
+  width: 40%;
   box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.techGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.logoGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  grid-column-gap: 5%;
+  margin: 10% auto 10% auto;
+}
+
+.logoText {
+  margin: auto;
+  font-weight: bolder;
+}
+
+.techTitle {
+  text-decoration: underline;
+}
+
+.techLogo {
+  width: 60px;
+  height: 40px;
 }
 
 /* Projects */
@@ -195,10 +218,25 @@ body {
   border-bottom: 2px solid black;
 }
 
-.workDone {
+.sectionGrid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-items: center;
+}
+
+.sectionGridGames {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.personalProjects {
+  margin-top: 5%;
+  margin-bottom: 10%;
+  background-color: rgba(212, 212, 212, .95);
+  padding-bottom: 3%;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
 .project {
@@ -296,6 +334,24 @@ body {
   background-size: cover;
 }
 
+/* Games */
+
+#games {
+  padding-top: 2%;
+}
+
+.gamesSection {
+  margin-top: 5%;
+  margin-bottom: 10%;
+  background-color: rgba(212, 212, 212, .95);
+  padding-bottom: 3%;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+
+}
+
+
+
 /* Contact */
 
 #contact {
@@ -318,3 +374,5 @@ body {
 .submitButton {
   background-color: rgb(67, 164, 228) !important;
 }
+
+
