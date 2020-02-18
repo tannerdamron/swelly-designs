@@ -16,6 +16,8 @@ import jsx from "../../assets/jsx.png";
 import reactnative from "../../assets/reactnative.png";
 import sql from "../../assets/sql.png";
 import vue from "../../assets/vue.png";
+import unreal from "../../assets/unreal.png"
+import unity from "../../assets/unity.png"
 
 import ScrollAnimation from "react-animate-on-scroll";
 import {
@@ -181,6 +183,18 @@ class Home extends Component {
                     <img className="techLogo" src={vue} alt="Vue Logo" />
                     <p className="logoText">Vue</p>
                   </div>
+                  <div className="logoGrid">
+                    <img className="techLogo" src={unity} alt="Unity Logo" />
+                    <p className="logoText">Unity</p>
+                  </div>
+                  <div className="logoGrid">
+                    <img
+                      className="techLogo"
+                      src={unreal}
+                      alt="Unreal Engine Logo"
+                    />
+                    <p className="logoText">Unreal Engine</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -190,7 +204,7 @@ class Home extends Component {
         <div id="projects">
           <div className="allWorkDone">
             <ScrollAnimation animateIn="fadeIn" animateOnce="true">
-              <h1 className="miniTitle">Work done for past clients:</h1>
+              <h1 className="miniTitle">Recent Work:</h1>
             </ScrollAnimation>
             <div className="sectionGrid">
               <ScrollAnimation
@@ -231,6 +245,21 @@ class Home extends Component {
               <h1 className="miniTitle">Personal Projects:</h1>
             </ScrollAnimation>
             <div className="sectionGrid">
+              <ScrollAnimation
+                animateIn="fadeIn"
+                duration="2"
+                animateOnce="true"
+              >
+                <h1>Joystick Forums</h1>
+                <a
+                  className="project joystickForums hvr-float-shadow"
+                  href="https://joystick-forums.firebaseapp.com/"
+                ></a>
+                <p className="projectText">
+                  A simple example forum website, with user authentication and
+                  comment threads, using Angular framework & Firebase database.
+                </p>
+              </ScrollAnimation>
               <ScrollAnimation
                 animateIn="fadeIn"
                 duration="2"

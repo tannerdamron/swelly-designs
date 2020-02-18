@@ -28,7 +28,7 @@ class Navbar extends React.Component {
     return (
       <Scrollspy
         className="scrollspy"
-        items={["about", "projects", "nothing", "games", "contact"]}
+        items={["about", "projects", "games", "contact"]}
         currentClassName="isCurrent"
       >
         <li className="navLink" onClick={this.snapToAbout}>
@@ -37,9 +37,6 @@ class Navbar extends React.Component {
         <li className="navLink" onClick={this.snapToProjects}>
           Projects
         </li>
-        <h1 className="homeTitle" onClick={this.snapToHome}>
-          Swelly Designs
-        </h1>
         <li className="navLink" onClick={this.snapToGames}>
           Games
         </li>
