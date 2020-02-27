@@ -3,7 +3,6 @@ import "../../App.css";
 
 import Button from "react-bootstrap/Button";
 
-import waveTop from "../../assets/wave-top.png";
 import waveMid from "../../assets/wave-mid.png";
 import waveBot from "../../assets/wave-bot.png";
 

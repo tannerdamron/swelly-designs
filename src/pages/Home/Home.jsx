@@ -90,28 +90,22 @@ class Home extends Component {
     return (
       <div id="homePage">
         <div id="about">
-          <ScrollAnimation animateIn="zoomInDown" animateOnce="true">
+          <ScrollAnimation animateIn="rotateInDownRight" animateOnce="true">
             <div className="bigCard">
               <div>
-                <img src={tanner} alt="owner of swelly designs face" />
+                <img
+                  className="tanner"
+                  src={tanner}
+                  alt="owner of swelly designs face"
+                />
               </div>
               <div>
                 <h1 className="bioTitle">About Me</h1>
-                <p>
+                <p className="aboutText">
                   I started my web and program development journey in August
                   2018. I have always been a computer and video game nerd
                   growing up and had thought that programming would take many
-                  years at an expensive college. After stumbling across some
-                  free resources online and developing a passion for programming
-                  and design in my spare time, I found a Web & Mobile
-                  Development Boot Camp called Epicodus in Seattle, WA. It
-                  turned out to be an amazing and intense experience. After 7
-                  months of ferrying over to Seattle Monday through Friday, 9
-                  hours a day I received a two month internship at an E-Commerce
-                  company called MainStem Inc as a Full Stack Developer. After
-                  the internship I have now been furthering my knowledge and
-                  skillset by creating custom websites for local business' and
-                  exploring new technologies.
+                  years at an expensive college. I found some free resources online and developed a passion for programming and design in my spare time. I then attended a Web & Mobile Development Boot Camp called Epicodus in Seattle, WA. It was an amazing and intense experience. After 7 months of ferrying over to Seattle Monday through Friday, 9 hours a day for class, I did a two month internship at MainStem Inc as a Full Stack Developer. After the internship I have been furthering my knowledge and skillset by creating custom websites for local business', exploring game design, and learning new technologies.
                 </p>
               </div>
             </div>
@@ -195,6 +189,10 @@ class Home extends Component {
                     />
                     <p className="logoText">Unreal Engine</p>
                   </div>
+                  <div className="logoGrid">
+                    <img className="techLogo" src={dnn} alt="DotNetNuke Logo" />
+                    <p className="logoText">DotNetNuke</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -237,6 +235,21 @@ class Home extends Component {
                   using Shopify and custom coding.
                 </p>
               </ScrollAnimation>
+              <ScrollAnimation
+                animateIn="fadeIn"
+                duration="2"
+                animateOnce="true"
+              >
+                <h1>Prime Glass Supply</h1>
+                <a
+                  className="project primeglass hvr-float-shadow"
+                  href="https://primeglass.myshopify.com/"
+                ></a>
+                <p className="projectText">
+                  An E-Commerce website for a local art broker that sends quote
+                  requests directly to company owners email.
+                </p>
+              </ScrollAnimation>
             </div>
           </div>
 
@@ -244,7 +257,7 @@ class Home extends Component {
             <ScrollAnimation animateIn="fadeIn" animateOnce="true">
               <h1 className="miniTitle">Personal Projects:</h1>
             </ScrollAnimation>
-            <div className="sectionGrid">
+            <div className="personalSectionGrid">
               <ScrollAnimation
                 animateIn="fadeIn"
                 duration="2"
@@ -265,14 +278,16 @@ class Home extends Component {
                 duration="2"
                 animateOnce="true"
               >
-                <h1>Joystick Forums</h1>
+                <h1>Tan's Tap Jam</h1>
                 <a
-                  className="project joystickForums hvr-float-shadow"
-                  href="https://joystick-forums.firebaseapp.com/"
+                  className="project tapRoom hvr-float-shadow"
+                  href="https://tap-room-react-25dad.firebaseapp.com/#/"
                 ></a>
                 <p className="projectText">
-                  A simple example forum website, with user authentication and
-                  comment threads, using Angular framework & Firebase database.
+                  A tap room website made with React, allowing tap room
+                  employees to see a list of available kegs, sell pints or
+                  growlers with amount left updated each time, add new kegs, and
+                  filter kegs by style of beer or price.
                 </p>
               </ScrollAnimation>
             </div>
@@ -304,13 +319,11 @@ class Home extends Component {
                 duration="2"
                 animateOnce="true"
               >
-                <h1>Spaceboi</h1>
-                <a
-                  className="project spaceboi hvr-float-shadow"
-                  href="https://spaceboi.claramunro.com"
-                ></a>
+                <h1>Current Game In Progress</h1>
+                <div className="project infiniteRunner"></div>
                 <p className="projectText">
-                  A JavaScript video game made with canvas and custom artwork.
+                  I am currently working on a pixel art 2d infinite runner using
+                  Unity2D.
                 </p>
               </ScrollAnimation>
             </div>

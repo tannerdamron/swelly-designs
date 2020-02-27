@@ -48,6 +48,7 @@ body {
         transform: translateX(-50%) translateZ(0) scaleY(1)
     }
 }
+
 .waveWrapper {
     overflow: hidden;
     position: absolute;
@@ -108,46 +109,52 @@ body {
 
 .navLink {
   font-size: 30px;
-  color: rgb(8, 176, 253);
-  margin-bottom: 2%;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
   list-style: none;
+  margin: auto;
 }
 
-.navLink:hover {
-  font-size: 32px;
-  cursor: pointer;
-  color: rgb(197, 232, 255);
+.hvr-grow-rotate {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
 }
+
+.hvr-grow-rotate:hover, .hvr-grow-rotate:focus, .hvr-grow-rotate:active {
+  cursor: pointer;
+  text-shadow: 0 0 10px rgba(216, 216, 216, 0.719);
+  -webkit-transform: scale(1.4) rotate(4deg);
+  transform: scale(1.4) rotate(4deg);
+}
+
 
 .scrollspy {
   width: 100%;
+  height: 6vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  background-color: rgb(66, 66, 66);
+  background-color: rgba(228, 228, 228, 0.97);
   position: -webkit-sticky;
   position: sticky;
   top: -1px;
   z-index: 5;
   box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
 
 
 .isCurrent {
   text-decoration-line: underline;
-  color: rgb(226, 226, 226);
-}
-
-.homeTitle {
-  font-size: 40px;
-  font-weight: lighter;
-  color: rgb(109, 191, 245);
-  text-shadow: 2px 2px black;
-}
-
-.homeTitle:hover {
-  cursor: pointer;
-  color: rgb(197, 232, 255);
+  color: rgb(0, 0, 0);
 }
 
 /* Home */
@@ -164,8 +171,15 @@ body {
   padding-bottom: 5%;
 }
 
+.tanner {
+  width: 100%;
+  height: 100%;
+  border-radius: 3%;
+  padding: 5px;
+}
+
 .bigCard {
-  background-color: rgba(212, 212, 212, .95);
+  background-color: rgba(230, 230, 230, .85);
   border: 2px solid black;
   width: 80%;
   padding: 20px;
@@ -175,8 +189,13 @@ body {
   box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+.aboutText {
+  font-size: 18px;
+  padding: 2%;
+}
+
 .card {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(230, 230, 230, .85);
   border: 2px solid black;
   padding: 10px;
   margin: auto;
@@ -185,12 +204,15 @@ body {
 
 .bioTitle {
   margin-bottom: 2%;
+  color: rgba(87, 140, 253, 0.863);
+  font-size: 60px;
+  text-shadow: 2px 2px black;
 }
 
 /* Tech Stack */
 
 .techStack {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(230, 230, 230, .85);
   border: 2px solid black;
   padding: 10px;
   margin: auto;
@@ -237,7 +259,7 @@ body {
 
 .miniTitle {
   color: rgba(87, 140, 253, 0.863);
-  font-size: 80px;
+  font-size: 60px;
   text-shadow: 2px 2px black;
   margin: 3%;
 }
@@ -245,7 +267,7 @@ body {
 .allWorkDone {
   margin-top: 5%;
   margin-bottom: 10%;
-  background-color: rgba(212, 212, 212, .95);
+  background-color: rgba(230, 230, 230, .85);
   padding-bottom: 3%;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
@@ -253,7 +275,7 @@ body {
 
 .sectionGrid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
 }
 
@@ -263,10 +285,16 @@ body {
   justify-items: center;
 }
 
+.personalSectionGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
 .personalProjects {
   margin-top: 5%;
   margin-bottom: 10%;
-  background-color: rgba(212, 212, 212, .95);
+  background-color: rgba(230, 230, 230, .85);
   padding-bottom: 3%;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
@@ -285,6 +313,7 @@ body {
 
 .projectText {
   padding: 2%;
+  margin: 0 5% 0 5%;
 }
 
 /* Float Shadow */
@@ -330,15 +359,6 @@ body {
   /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
 }
 
-.spaceboi {
-  width: 20vw;
-  height: 20vh;
-  color: white;
-  background-image: url('../src/assets/spaceboi.PNG');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .alleywayEvents {
   width: 20vw;
   height: 20vh;
@@ -346,6 +366,7 @@ body {
   background-image: url('../src/assets/alleywayevents.PNG');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .joystickForums {
@@ -356,7 +377,19 @@ body {
   background-position-x: 45%;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
+
+.tapRoom {
+  width: 20vw;
+  height: 20vh;
+  color: white;
+  background-image: url('../src/assets/tapRoom.PNG');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 
 .kninecs {
   width: 20vw;
@@ -365,6 +398,17 @@ body {
   background-image: url('../src/assets/kninecs.PNG');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+}
+
+.primeglass {
+  width: 20vw;
+  height: 20vh;
+  color: white;
+  background-image: url('../src/assets/primeGlass.PNG');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 /* Games */
@@ -376,11 +420,32 @@ body {
 .gamesSection {
   margin-top: 5%;
   margin-bottom: 10%;
-  background-color: rgba(212, 212, 212, .95);
+  background-color: rgba(230, 230, 230, .85);
   padding-bottom: 3%;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
+}
 
+.spaceboi {
+  width: 20vw;
+  height: 20vh;
+  color: white;
+  background-image: url('../src/assets/spaceboi.PNG');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.infiniteRunner {
+  width: 20vw;
+  height: 20vh;
+  color: white;
+  background-image: url('../src/assets/SimpleRunJumpClip2D.gif');
+  margin: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-position-y: bottom;
 }
 
 
@@ -394,7 +459,7 @@ body {
 .contactCard {
   margin: auto;
   width: 50%;
-  background-color: rgba(212, 212, 212, .95);
+  background-color: rgba(230, 230, 230, .85);
   padding: 3%;
   border-radius: 2%;
 }
@@ -412,25 +477,28 @@ body {
 
 @media screen and (max-width: 900px) {
 
-  .App {
-
-}
-
   .landingDiv {
   padding-top: 25vh;
 }
 
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(.5)
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.3)
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(.5)
+    }
+}
+
   .scrollspy {
-  grid-template-columns: 1fr 1fr 1fr 1fr;
   padding-left: 0;
   }
 
   .navLink {
     font-size: 20px;
-  }
-
-  .navLink:hover {
-    font-size: 22px;
   }
 
   .miniTitle {
@@ -439,48 +507,108 @@ body {
   }
 
   .bigCard {
-  grid-template-rows: .2fr 1fr;
-  grid-template-columns: none;
-}
+    grid-template-rows: .2fr 1fr;
+    grid-template-columns: none;
+  }
 
-.techStack {
-  width: 80%;
-}
+  .techStack {
+    width: 80%;
+  }
 
 
-.techGrid {
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: none;
-}
+  .techGrid {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: none;
+  }
 
-.sectionGrid {
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: none;
-}
+  .sectionGrid {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: none;
+  }
 
-.sectionGridGames {
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: none;
-}
+  .sectionGridGames {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: none;
+  }
 
-.spaceboi {
-  width: 80vw;
-}
+  .personalSectionGrid {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: none;
+  }
 
-.alleywayEvents {
-  width: 80vw;
-}
+  .spaceboi {
+    width: 80vw;
+  }
 
-.joystickForums {
-  width: 80vw;
-}
+  .alleywayEvents {
+    width: 80vw;
+  }
 
-.kninecs {
-  width: 80vw;
-}
+  .joystickForums {
+    width: 80vw;
+  }
 
-.contactCard {
-  width: 80%;
+  .kninecs {
+    width: 80vw;
+  }
+
+  .primeglass {
+    width: 80vw
+  }
+
+  .tapRoom {
+    width: 80vw
+  }
+
+  .infiniteRunner {
+    width: 80vw;
+  }
+
+  .contactCard {
+    width: 80%;
+  }
+
+  .hvr-grow-rotate {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+
+  .hvr-grow-rotate:hover, .hvr-grow-rotate:focus, .hvr-grow-rotate:active {
+    cursor: pointer;
+    text-shadow: 0 0 10px rgba(216, 216, 216, 0.719);
+    -webkit-transform: scale(1.1) rotate(4deg);
+    transform: scale(1.1) rotate(4deg);
+  }
+
+  #about {
+    padding-top: 10%;
+  }
+
+  #projects {
+    padding-top: 10%;
+  }
+
+  #games {
+    padding-top: 10%;
+  }
+
+  .aboutText {
+    font-size: 14px;
+  }
+
+  .bioTitle {
+    font-size: 50px;
+  }
+
+  .miniTitle {
+  font-size: 50px;
 }
 
 }

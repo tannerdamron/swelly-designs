@@ -31,16 +31,16 @@ class Navbar extends React.Component {
         items={["about", "projects", "games", "contact"]}
         currentClassName="isCurrent"
       >
-        <li className="navLink" onClick={this.snapToAbout}>
+        <li className="hvr-grow-rotate navLink" onClick={this.snapToAbout}>
           About
         </li>
-        <li className="navLink" onClick={this.snapToProjects}>
+        <li className="hvr-grow-rotate navLink" onClick={this.snapToProjects}>
           Projects
         </li>
-        <li className="navLink" onClick={this.snapToGames}>
+        <li className="hvr-grow-rotate navLink" onClick={this.snapToGames}>
           Games
         </li>
-        <li className="navLink" onClick={this.snapToContact}>
+        <li className="hvr-grow-rotate navLink" onClick={this.snapToContact}>
           Contact
         </li>
       </Scrollspy>
