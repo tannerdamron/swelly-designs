@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://swellydesigns.com",
+  "homepage": "swellydesigns.com",
   "dependencies": {
     "bootstrap": "^4.4.1",
     "emailjs-com": "^2.4.1",
