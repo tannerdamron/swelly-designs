@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.669a27c9.chunk.css",
+    "main.css": "/static/css/main.0642087e.chunk.css",
     "main.js": "/static/js/main.0abac151.chunk.js",
     "main.js.map": "/static/js/main.0abac151.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.a5eaf332.js",
@@ -9,10 +9,10 @@
     "static/js/2.b7595314.chunk.js": "/static/js/2.b7595314.chunk.js",
     "static/js/2.b7595314.chunk.js.map": "/static/js/2.b7595314.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.d34b3f537c161d69fcb3b5a274a1ec07.js": "/precache-manifest.d34b3f537c161d69fcb3b5a274a1ec07.js",
+    "precache-manifest.9d6d54c269c2e01c05d1b17e215b8a17.js": "/precache-manifest.9d6d54c269c2e01c05d1b17e215b8a17.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.2b603bb3.chunk.css.map": "/static/css/2.2b603bb3.chunk.css.map",
-    "static/css/main.669a27c9.chunk.css.map": "/static/css/main.669a27c9.chunk.css.map",
+    "static/css/main.0642087e.chunk.css.map": "/static/css/main.0642087e.chunk.css.map",
     "static/media/App.css": "/static/media/tapRoom.8729db62.PNG",
     "static/media/csharp.png": "/static/media/csharp.e8460f0d.png",
     "static/media/css.png": "/static/media/css.a57aeaeb.png",
@@ -34,7 +34,7 @@
     "static/js/runtime-main.a5eaf332.js",
     "static/css/2.2b603bb3.chunk.css",
     "static/js/2.b7595314.chunk.js",
-    "static/css/main.669a27c9.chunk.css",
+    "static/css/main.0642087e.chunk.css",
     "static/js/main.0abac151.chunk.js"
   ]
 }
