@@ -1,5 +1,6 @@
 import React from "react";
 import "../../App.css";
+import Div100vh from "react-div-100vh";
 
 import Button from "react-bootstrap/Button";
 
@@ -10,43 +11,42 @@ class Landing extends React.Component {
   componentDidMount() {
   }
 
-  snapToHome() {
+  snapToAbout() {
     document.getElementById("about").scrollIntoView({behavior: "smooth"});
   }
 
   render() {
     return (
-      <div id="Landing">
+      <Div100vh id="Landing">
         <div className="landingDiv">
-          <h2>
+          <h2 className="landingText">
             Welcome to Swelly Designs, My name is Tanner Damron.
             <br />I am a certified full stack web and mobile developer and
             aspiring game designer.
           </h2>
           <Button
             className="landingButton"
-            variant="outline-dark"
             size="lg"
-            onClick={this.snapToHome}
+            onClick={this.snapToAbout}
           >
             Check out my work!
           </Button>
         </div>
-        <div class="waveWrapper waveAnimation">
-          <div class="waveWrapperInner bgMiddle">
+        <div className="waveWrapper waveAnimation">
+          <div className="waveWrapperInner bgMiddle">
             <div
-              class="wave waveMiddle"
+              className="wave waveMiddle"
               style={{ backgroundImage: `url(${waveMid})` }}
             ></div>
           </div>
-          <div class="waveWrapperInner bgBottom">
+          <div className="waveWrapperInner bgBottom">
             <div
-              class="wave waveBottom"
+              className="wave waveBottom"
               style={{ backgroundImage: `url(${waveBot})` }}
             ></div>
           </div>
         </div>
-      </div>
+      </Div100vh>
     );
   }
 }

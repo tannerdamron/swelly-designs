@@ -39,6 +39,7 @@ class Home extends Component {
     subject: "",
     message: ""
   };
+
   handleSubmit(e) {
     e.preventDefault();
     const { name, email, subject, message } = this.state;
@@ -90,7 +91,7 @@ class Home extends Component {
     return (
       <div id="homePage">
         <div id="about">
-          <ScrollAnimation animateIn="rotateInDownRight" animateOnce="true">
+          <ScrollAnimation animateIn="bounceInRight" animateOnce="true">
             <div className="bigCard">
               <div>
                 <img
@@ -111,7 +112,7 @@ class Home extends Component {
             </div>
           </ScrollAnimation>
 
-          <ScrollAnimation animateIn="rotateInDownLeft" animateOnce="true">
+          <ScrollAnimation animateIn="bounceInLeft" animateOnce="true">
             <div className="techStack">
               <h1 className="miniTitle">Tech Stack</h1>
               <div className="techGrid">
@@ -187,11 +188,11 @@ class Home extends Component {
                       src={unreal}
                       alt="Unreal Engine Logo"
                     />
-                    <p className="logoText">Unreal Engine</p>
+                    <p className="logoText">Unreal</p>
                   </div>
                   <div className="logoGrid">
                     <img className="techLogo" src={dnn} alt="DotNetNuke Logo" />
-                    <p className="logoText">DotNetNuke</p>
+                    <p className="logoText">DNN</p>
                   </div>
                 </div>
               </div>
@@ -331,7 +332,7 @@ class Home extends Component {
         </div>
 
         <div id="contact">
-          <ScrollAnimation animateIn="flipInX" animateOnce="true">
+          <ScrollAnimation animateIn="lightSpeedIn" animateOnce="true">
             <div className="contactCard">
               <h1 className="p-heading1">Get in Touch</h1>
               <Form onSubmit={this.handleSubmit.bind(this)}>
