@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "627a95426b26fe6996b8671d71723351",
+    "revision": "41d6e4d29027f1ca298abbf933140c3f",
     "url": "/index.html"
   },
   {
-    "revision": "3c685f60125446aefd60",
+    "revision": "741bdf3db207bb4fe80c",
     "url": "/static/css/2.2b603bb3.chunk.css"
   },
   {
-    "revision": "c5a0c96c82386360734f",
+    "revision": "12c78e3e9abac6631f00",
     "url": "/static/css/main.4180bce1.chunk.css"
   },
   {
-    "revision": "3c685f60125446aefd60",
-    "url": "/static/js/2.6d45d5bb.chunk.js"
+    "revision": "741bdf3db207bb4fe80c",
+    "url": "/static/js/2.677740f5.chunk.js"
   },
   {
-    "revision": "c5a0c96c82386360734f",
-    "url": "/static/js/main.a8c202c5.chunk.js"
+    "revision": "12c78e3e9abac6631f00",
+    "url": "/static/js/main.fa330b8c.chunk.js"
   },
   {
     "revision": "05129d9571d833ef1980",
@@ -38,10 +38,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2efd38edf655cb3f183bbde5554f75a8",
     "url": "/static/media/alleywayevents.2efd38ed.PNG"
-  },
-  {
-    "revision": "bb1a9832f48f906bb04cab363343193e",
-    "url": "/static/media/cover.bb1a9832.PNG"
   },
   {
     "revision": "e8460f0d8b9df01e9460bfd1ade0e8c8",
