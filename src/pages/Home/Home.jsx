@@ -106,7 +106,16 @@ class Home extends Component {
                   I started my web and program development journey in August
                   2018. I have always been a computer and video game nerd
                   growing up and had thought that programming would take many
-                  years at an expensive college. I found some free resources online and developed a passion for programming and design in my spare time. I then attended a Web & Mobile Development Boot Camp called Epicodus in Seattle, WA. It was an amazing and intense experience. After 7 months of ferrying over to Seattle Monday through Friday, 9 hours a day for class, I did a two month internship at MainStem Inc as a Full Stack Developer. After the internship I have been furthering my knowledge and skillset by creating custom websites for local business', exploring game design, and learning new technologies.
+                  years at an expensive college. I found some free resources
+                  online and developed a passion for programming and design in
+                  my spare time. I then attended a Web & Mobile Development Boot
+                  Camp called Epicodus in Seattle, WA. After 7 months of
+                  ferrying over to Seattle Monday through Friday, and pair
+                  programming 8 hours a day, I did a two month internship at
+                  MainStem Inc. as a Full Stack Developer. After the internship
+                  I have been furthering my knowledge and skillset by creating
+                  custom websites for local business', exploring game design,
+                  and learning new technologies.
                 </p>
               </div>
             </div>
@@ -248,7 +257,7 @@ class Home extends Component {
                 ></a>
                 <p className="projectText">
                   An E-Commerce website for a local art broker that sends quote
-                  requests directly to company owners email.
+                  requests directly to company owners email. (Currently under construction).
                 </p>
               </ScrollAnimation>
             </div>
@@ -313,6 +322,7 @@ class Home extends Component {
                 ></a>
                 <p className="projectText">
                   A JavaScript video game made with canvas and custom artwork.
+                  (Web browser only)
                 </p>
               </ScrollAnimation>
               <ScrollAnimation
